@@ -25,6 +25,7 @@ node () {
   	stage('Checkout Code Repo')
 	  {
 		println("Step: Checkout Code Repo")
+		checkout scm  
 	  }
 	  
 	  stage('Build Code Repository')
