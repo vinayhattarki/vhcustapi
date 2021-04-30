@@ -20,20 +20,22 @@ println("THIS is DEV BRANCH")
 //}
 
 
-node (NODE_ENV) {
+node () {
   try {
   
-			println("You are inside node")
+	println("You are inside node")
   
       }
 	  
    catch (err)
    {
-   
+       
+	   println("You are inside catch error")
    }
+   
    finally 
    {
    
-   
+	   println("You are inside Finally block")
    }
 }
