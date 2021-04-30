@@ -22,9 +22,10 @@ println("THIS is DEV BRANCH")
 
 node () {
   try {
-  
-	println("You are inside node")
-  
+  	stage('Checkout Code Repo')
+	  {
+		println("You are inside node-Stage-Checkout Code Repo")
+	  }
       }
 	  
    catch (err)
