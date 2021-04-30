@@ -24,8 +24,29 @@ node () {
   try {
   	stage('Checkout Code Repo')
 	  {
-		println("You are inside node-Stage-Checkout Code Repo")
+		println("Step: Checkout Code Repo")
 	  }
+	  
+	  stage('Build Code Repository')
+	  {
+		println("Step: Build Code Repository")
+	  }
+	  
+	  stage('Run Unit Tests')
+	  {
+		println("Step: Run Unit Tests")
+	  }
+	  
+	  stage('Publish Code to Stage Location')
+	  {
+		println("Step: Publish Code to Stage Location")
+	  }
+	  
+	  stage('Notify-Email')
+	  {
+		println("Step: Notify-Email")
+	  }
+	  
       }
 	  
    catch (err)
